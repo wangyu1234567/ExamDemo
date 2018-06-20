@@ -225,8 +225,6 @@ public class Schedule {
                 		//写不下去了。。。
                 	}
                 }
-              System.out.println("key= " + entry.getKey() + " and value= "
-                    + entry.getValue());
             }
         }
         
@@ -278,6 +276,17 @@ public class Schedule {
     			}
     		}
     	}
+    	
+    	if(runTasks != null)
+    	{
+    		runTasks.clear();
+    	}
+    	
+    	if(serverNodes != null)
+    	{
+    		serverNodes.clear();
+    	}
+    	
     	if(tasks != null && tasks.size() > 0)
     	{
     		Collections.sort(tasks, comparator1);
